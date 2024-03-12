@@ -44,14 +44,15 @@
 
             .button-container {
                 margin-top: 10px; 
+                width: auto;
             }
         }
 
-        /* Personalizando botões */
+        
         #botao1 {
             background-color: green;
             color: white;
-            margin-right: 15px; 
+ 
         }
 
         #botao2 {
@@ -123,7 +124,8 @@
         crossorigin="anonymous"></script>
     <script>
         document.getElementById('botao1').addEventListener('click', function () {
-            document.querySelector('h1').innerText = 'Dia 29 marcado então?';
+            alert('Dia 29 bora?');
+            document.querySelector('h1').innerText = '🥳🥳🎉';
             document.body.style.backgroundColor = 'green';
         });
 
