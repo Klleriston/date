@@ -20,28 +20,38 @@
         }
 
         .carousel-container {
-            height: 60vh;
+            height: 60vh; /* Ajustado para ocupar mais espaço na tela */
         }
 
         .button-container {
-            margin-top: 20px; 
+            margin-top: 20px; /* Ajustado para dar mais espaço */
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+            padding: 10px 0;
+            text-align: center;
         }
 
         @media (max-width: 768px) {
             .carousel-container {
-                height: 40vh;
+                height: 40vh; /* Altura do carrossel ajustada para dispositivos móveis */
             }
 
             .button-container {
-                margin-top: 10px; 
+                margin-top: 10px; /* Espaçamento inferior reduzido para dispositivos móveis */
             }
         }
 
-      
+        /* Personalizando botões */
         #botao1 {
             background-color: green;
             color: white;
-            margin-right: 5px;
+            margin-right: 5px; /* Ajuste de margem entre os botões */
         }
 
         #botao2 {
@@ -105,6 +115,10 @@
         </div>
     </div>
 
+    <div class="footer">
+        <p>Desenvolvido por klleriston | IG: @kekz001</p>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
@@ -114,7 +128,7 @@
         });
 
         document.getElementById('botao2').addEventListener('click', function () {
-    
+            // Muda a posição do botão "Não" para uma posição aleatória
             document.getElementById('botao2').style.position = 'absolute';
             document.getElementById('botao2').style.left = Math.random() * 80 + '%';
             document.getElementById('botao2').style.top = Math.random() * 80 + '%';
