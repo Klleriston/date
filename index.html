@@ -20,11 +20,11 @@
         }
 
         .carousel-container {
-            height: 60vh; /* Ajustado para ocupar mais espaço na tela */
+            height: 60vh;
         }
 
         .button-container {
-            margin-top: 20px; /* Ajustado para dar mais espaço */
+            margin-top: 20px; 
         }
 
         .footer {
@@ -39,11 +39,11 @@
 
         @media (max-width: 768px) {
             .carousel-container {
-                height: 40vh; /* Altura do carrossel ajustada para dispositivos móveis */
+                height: 40vh;
             }
 
             .button-container {
-                margin-top: 10px; /* Espaçamento inferior reduzido para dispositivos móveis */
+                margin-top: 10px; 
             }
         }
 
@@ -51,7 +51,7 @@
         #botao1 {
             background-color: green;
             color: white;
-            margin-right: 5px; /* Ajuste de margem entre os botões */
+            margin-right: 15px; 
         }
 
         #botao2 {
@@ -110,7 +110,6 @@
                         </div>
                     </div>
                 </div>
-               
             </div>
         </div>
     </div>
@@ -125,13 +124,15 @@
     <script>
         document.getElementById('botao1').addEventListener('click', function () {
             document.querySelector('h1').innerText = 'Dia 29 marcado então?';
+            document.body.style.backgroundColor = 'green';
         });
 
         document.getElementById('botao2').addEventListener('click', function () {
-            
-            document.getElementById('botao2').style.position = 'absolute';
-            document.getElementById('botao2').style.left = Math.random() * 55 + '%';
-            document.getElementById('botao2').style.top = Math.random() * 55 + '%';
+            var button = document.getElementById('botao2');
+            var container = document.querySelector('.carousel-container');
+            button.style.position = 'absolute';
+            button.style.left = Math.random() * (container.offsetWidth - button.offsetWidth) + 'px';
+            button.style.top = Math.random() * (container.offsetHeight - button.offsetHeight) + 'px';
         });
     </script>
 </body>
