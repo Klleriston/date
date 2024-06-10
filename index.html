@@ -32,9 +32,10 @@
             bottom: 0;
             left: 0;
             width: 100%;
-            height: 20px;
+            height: 60px; /* Ajuste a altura conforme necessário */
             background-color: #f8f9fa;
             text-align: center;
+            padding-top: 10px; /* Adicione um pouco de padding para espaçamento */
         }
 
         @media (max-width: 768px) {
@@ -48,11 +49,9 @@
             }
         }
 
-        
         #botao1 {
             background-color: green;
             color: white;
- 
         }
 
         #botao2 {
@@ -68,7 +67,7 @@
         <div class="row">
             <div class="col-md-8 offset-md-2">
                 <div class="carousel-container">
-                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -91,9 +90,6 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="/assets/img/TELA3.png" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="/assets/img/fim.png" class="d-block w-100" style="width: 50px;" alt="...">
                             </div>
                         </div>
                         <button class="carousel-control-prev" type="button"
@@ -119,17 +115,15 @@
     </div>
 
     <div class="footer">
-        <p>Desenvolvido por Klleriston | IG: @klleriston_</p>
+        <p>Insta: <a href="https://www.instagram.com/klleriston_/" type="button" class="btn btn-danger">@</a></p>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script>
         document.getElementById('botao1').addEventListener('click', function () {
-            alert('Qual dia ce prefere?');
+            alert('Só me falar o dia no insta agora rs');
             document.querySelector('h1').innerText = '🥳🥳🎉';
-            document.body.style.backgroundColor = 'green';
         });
 
         document.getElementById('botao2').addEventListener('click', function () {
